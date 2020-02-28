@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+<title>Pixel Exit XenForo Styles Demo : Evolve</title>
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- CSS Style -->
+<link rel="stylesheet" href="demo/style.css"> 
+<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/manifest.js">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#232931">
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Pixel Exit">
+	<meta name="application-name" content="Pixel Exit">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#232931">
+<!-- Used Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+<link href="font-awesome/4-7-0/css/font-awesome.min.css" rel="stylesheet">
+<!-- JavaScript -->
+<script type="text/javascript" src="demo/js/jquery-1.9.1.min.js"></script>
+<script >
+	var theme_list_open=false;
+		$(document).ready(function(){function e(){var e=$("#switcher")
+		.height();$("#iframe")
+		.attr("height",
+		$(window).height()-e+"px")}
+		IS_IPAD=navigator.userAgent.match(/iPad/i)!=null;
+		$(window).resize(function(){e()}).resize();
+			$("#theme_select").click(function(){if(theme_list_open==true){
+			$(".center ul li ul").hide();theme_list_open=false}else{
+			$(".center ul li ul").show();theme_list_open=true}return false});
+			$("#theme_list ul li a").click(function(){var e=$(this).attr("rel").split(",");
+			$("li.purchase a").attr("href",e[1]);
+			$("li.remove_frame a").attr("href",e[0]);
+			$("#iframe").attr("src",e[0]);
+			window.location.href = "?theme="+e[2]+""
+			$("li.close a").attr("src",e[0]);
+			$("#theme_list a#theme_select").text($(this).text());
+			$(".center ul li ul").hide();theme_list_open=false;return false});
+			$("#header-bar").hide();clicked="desktop";var t={desktop:"100%",tabletlandscape:1040,tabletportrait:788,mobilelandscape:500,mobileportrait:340,placebo:0};jQuery(".responsive a").on("click",function(){var e=jQuery(this);for(device in t){console.log(device);console.log(t[device]);if(e.hasClass(device)){clicked=device;jQuery("#iframe").width(t[device]);if(clicked==device){jQuery(".responsive a").removeClass("active");e.addClass("active")}}}return false});if(IS_IPAD){
+			$("#iframe").css("padding-bottom","60px")
+		}}
+	)
+</script>
+</head>
+<body>
+    <div id="switcher">
+		<div class="center">
+            <div class="logo">
+                <a href="index.html" target="_blank" title="Pixel Exit"><img src="demo/images/logo.png" alt="Pixel Exit" /></a>
+            </div>
+                <ul>
+                    <li id="theme_list"><a id="theme_select" href="#">
+					Select a theme...</a>
+				<ul>
+				                   <li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=46&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/evolve.37,Evolve">Evolve <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/evolve.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=53&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/evolve.37,- Evolve - Canvas">- Evolve - Canvas <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/evolvecanvas.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=47&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/evolve.37,- Evolve - Color 2">- Evolve - Color 2 <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/evolve2.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=48&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/evolve.37,- Evolve - Color 3">- Evolve - Color 3 <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/evolve3.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=49&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/evolve.37,- Evolve - Color 4">- Evolve - Color 4 <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/evolve4.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=50&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/evolve.37,- Evolve - Color 5">- Evolve - Color 5 <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/evolve5.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=51&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/evolve.37,- Evolve - Color 6">- Evolve - Color 6 <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/evolve6.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=52&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/evolve.37,- Evolve - Color 7">- Evolve - Color 7 <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/evolve7.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=44&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/xenbase.35,XenBase">XenBase <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/xenbase.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=55&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/xenbase.35,- XenBase - Canvas">- XenBase - Canvas <span style="background:#2ecc71">NEW</span></a><img alt="" class="preview" src="demo/images/preview/xenbasecanvas.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=41&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/nova.34,Nova">Nova <span style="background:#95a5a6">General</span></a><img alt="" class="preview" src="demo/images/preview/nova.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=42&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/nova.34,- Nova Dark">- Nova Dark <span style="background:#95a5a6">General</span></a><img alt="" class="preview" src="demo/images/preview/novadark.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=56&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/nova.34,- Gamer Time">- Gamer Time <span style="background:#e67e22">GAMING</span></a><img alt="" class="preview" src="demo/images/preview/gamertime.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=19&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/omni.32,Omni">Omni <span style="background:#e67e22">GAMING</span></a><img alt="" class="preview" src="demo/images/preview/omni.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=20&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/omni.32,- Omni - Serene">- Omni - Serene <span style="background:#e67e22">GAMING</span></a><img alt="" class="preview" src="demo/images/preview/omniserene.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=21&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/omni.32,- Omni - Legend">- Omni - Legend <span style="background:#e67e22">GAMING</span></a><img alt="" class="preview" src="demo/images/preview/omnilegend.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=22&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/omni.32,- Omni - Rustic">- Omni - Rustic <span style="background:#e67e22">GAMING</span></a><img alt="" class="preview" src="demo/images/preview/omnirustic.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=23&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/omni.32,- Omni - Mist">- Omni - Mist <span style="background:#e67e22">GAMING</span></a><img alt="" class="preview" src="demo/images/preview/omnimist.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=27&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/edge.30,Edge">Edge <span style="background:#126295">CLASSIC</span></a><img alt="" class="preview" src="demo/images/preview/edge.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=28&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/flat-awesome.25,Flat Awesome Plus">Flat Awesome Plus <span style="background:#126295">CLASSIC</span></a><img alt="" class="preview" src="demo/images/preview/fademo.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=38&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/flat-awesome.25,Flat Awesome Dark Plus">Flat Awesome Dark Plus <span style="background:#126295">CLASSIC</span></a><img alt="" class="preview" src="demo/images/preview/fadarkdemo.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=25&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/apex.10,Apex">Apex <span style="background:#126295">CLASSIC</span></a><img alt="" class="preview" src="demo/images/preview/apexp.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=29&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/fusion-gamer.2,Fusion Gamer">Fusion Gamer <span style="background:#126295">CLASSIC</span></a><img alt="" class="preview" src="demo/images/preview/fusiongamer.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=26&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/core.1,Core">Core <span style="background:#126295">CLASSIC</span></a><img alt="" class="preview" src="demo/images/preview/core.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=35&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/core.1,Core Dark">Core Dark <span style="background:#126295">CLASSIC</span></a><img alt="" class="preview" src="demo/images/preview/coredark.png"></li><li class="button_a">
+					<a href="#" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=31&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php,https://pixelexit.com/products/blackened-pro.17,Blackened Pro">Blackened Pro <span style="background:#126295">CLASSIC</span></a><img alt="" class="preview" src="demo/images/preview/blackenedpro.png"></li>                </ul>
+                    </li>	
+                </ul>
+                <div class="responsive">
+                    <a href="#" class="desktop active" title="View Desktop Version"></a> 
+                    <a href="#" class="tabletlandscape" title="View Tablet Landscape (1024x768)"></a> 
+                    <a href="#" class="tabletportrait" title="View Tablet Portrait (768x1024)"></a> 
+                    <a href="#" class="mobilelandscape" title="View Mobile Landscape (480x320)"></a>
+                    <a href="#" class="mobileportrait" title="View Mobile Portrait (320x480)"></a>
+                </div>
+                <ul class="links">
+                    <li class="purchase" rel="https://pixelexit.com/products/evolve.37">
+                    	<a href="products/evolve-37.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Purchase</a>
+                    </li>		
+                    <li class="close" rel="https://pixelexit.com/demo/xf/index.php?misc/style&style_id=46&_xfRedirect=https%3A%2F%2Fpixelexit.com%2Fdemo%2Fxf%2Findex.php">
+                    	<a href="demo/xf/index.html"><i class="fa fa-times" aria-hidden="true"></i> Close</a>
+                    </li>		
+                </ul>
+        </div>
+    </div>
+    <iframe id="iframe" src="demo/xf/index.html" frameborder="0" width="100%" height="100%"></iframe>
+<center><font size="2">This is the free demo result. For a full version of this website, please go to  <a href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/</a></font></center></body>
+</html>
